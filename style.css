@@ -1,0 +1,309 @@
+* { 
+  box-sizing: border-box;
+}
+ 
+ 
+ body {
+  font-family: 'Poppins';	
+  background-color: #F2F8E5	;
+}
+
+/* Code sa nav */
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+   color: #F2F8E5;
+}
+body {
+   background: #F2F8E5;
+   font-family: Arial, Helvetica, sans-serif;
+}
+header {
+   width: 100%;
+   height: 80px;
+   background: #F38632;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 100px;
+ 
+ 
+}
+
+
+.header {
+     width:100%; /*width of your image*/
+   height:300px; /*height of your image*/
+
+   margin:0; /* If you want no margin */
+   padding:0; /*if your want to padding */
+  
+}
+
+.my-img {
+  width: 100%;
+  /* Images default to being inline, inline items cannot have a width, so change to block: */
+  display: block;
+  /* The following may be needed if there's still a wierd looking 2-3px gap at the bottom of the image in some browsers: */
+  vertical-align: bottom;
+}
+
+
+.logo {
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+}
+.hamburger {
+   display: none;
+}
+.nav-bar ul {
+   display: flex;
+}
+.nav-bar ul li a {
+   display: block;
+   color: #4C230A;
+   font-size: 20px;
+   padding: 10px 25px;
+   border-radius: 50px;
+   transition: 0.2s;
+   margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+   color: #F2F8E5;
+   background: #280004;
+}
+.nav-bar ul li a.active {
+   color: #280004;
+   background: #D1CCCC;
+}
+@media only screen and (max-width: 1320px) {
+   header {
+       padding: 0 50px;
+   }
+}
+@media only screen and (max-width: 1100) {
+   header {
+       padding: 0 30px;
+   }
+}
+@media only screen and (max-width: 900px) {
+   .hamburger {
+       display: block;
+	   cursor: pointer;
+   }
+   .hamburger .line {
+       width: 30px;
+	   height: 3px;
+	   background: #fff;
+	   margin: 6px 0;
+   }
+   .nav-bar {
+       height: 550px;
+       position: absolute;
+	   top: 80px;
+	   left: 0;
+	   right: 0;
+	   width: 100vw;
+	   background:  #F2F8E5;
+	   transition: 0.5s;
+	   overflow: hidden;
+   }
+   .nav-bar.active {
+       height: 450px;
+   }
+   .nav-bar ul {
+       display: block;
+	   width: fit-content;
+	   margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul {
+       opacity: 1;
+   }
+   .nav-bar ul li a {
+       margin-bottom: 12px;
+	   color: #280004;
+   }
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Code sa footer */
+
+footer
+{
+   position: relative;
+   width: 100%;
+   height: auto;
+   padding: 50px 100px;
+   background: #F38632;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   text-decoration: none;
+    color:  #F38632;
+}
+footer .container
+{
+	   color:  #F38632;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   flex-direction: row;
+   text-decoration: none;
+   color:  #F38632;
+}
+footer .container .sec
+{
+   margin-right: 30px;
+   text-decoration: none;
+    color: #F38632;
+}
+footer .container .sec.aboutus
+{
+	text-decoration: none;
+	width: 40%;  
+	 color:  #F38632;
+}
+
+footer .container .sec.quickLinks
+{
+	text-decoration: none;
+	color: #4C230A;
+	
+}
+footer .container h2
+{
+   position: relative;
+   color: #381800;
+   font-weight: 500;
+   margin-bottom: 15px;	
+}
+footer .container h2:before     
+{
+   content: '';
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   width: 70px;
+   height: 2px;
+   background: #A53F2B;
+    color:  #F38632;
+}
+footer p
+{
+   color: #4C230A;
+}
+.sci
+{
+   margin-top: 20px;
+   display: flex;
+   text-decoration: none;
+        color: #F2F8E5;
+}
+.sci li
+{
+   list-style: none;
+     color: #F2F8E5;
+	 text-decoration: none;
+}
+.sci li a
+{
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   background: #4C230A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+   text-decoration: none;
+   border-radius: 4px;
+   
+}
+.sci li a:hover
+{
+   background: #f00;
+   color: #F2F8E5;
+   text-decoration: none;
+}
+.sci li a .fa
+{
+   color: #F2F8E5;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+  
+ p {
+ color:#252525;}
+ h2 {color:#331D00;}
+ h4 {color:#4C230A;}
+ 
+ /* Para sa menu */
+ 
+ .card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 340px;
+  max-height: 330px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-image-container {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-icon {
+  font-size: 40px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #1797b8;
+  cursor: default;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
