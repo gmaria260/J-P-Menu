@@ -102,7 +102,7 @@ header {
 	   margin: 6px 0;
    }
    .nav-bar {
-       height: 550px;
+       height: 0px;
        position: absolute;
 	   top: 80px;
 	   left: 0;
