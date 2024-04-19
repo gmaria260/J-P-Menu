@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> MENU | J & p Pares and Mami </title>
+<link rel ="icon" type="image/x-icon" href="adi.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3142eebea3.js" crossorigin="anonymous"></script>
+
+<link href="card-hover.css" rel="stylesheet"> 
+
+
+<style>
+
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url("b.jpg");
+  width: 100%;
+  height:250px;
+  vertical-padding: 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: #F38632;
+}
+
+.header p {
+  color: #F38632;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 0%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #000000;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.row2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly
+	
+}
+
+.container3 {
+  border: 2px solid  #280004;
+  background-color:  #4C230A;
+  border-radius: 5px;
+  padding: 20px;
+  margin:30px 200px;
+}
+
+.container3 ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container3 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container3 span {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+@media (max-width: 500px) {
+  .container3 {
+      text-align: center;
+  }
+  .container3 img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+.container4 {
+  border: 2px solid   #4C230A;
+  background-color: #280004;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 300px;
+}
+
+.container4 ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container4 img {
+  float: right;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container4 span {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+@media (max-width: 500px) {
+  .container4 {
+      text-align: center;
+  }
+  .container4 img {
+      margin: auto;
+      float: none;
+      display: block;
+	} 
+ }
+	  .text-container {
+	  background-color: #4C230A;
+  width: 300px;
+  border: 5px solid #F38632;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 20px;
+  }
+
+
+</style>
+</head>
+<body>
+
+<header>
+	    <a href=""><img src="adi.png" style="width:55px;length:5px;"></a>	
+		<div class="hamburger">
+			    <div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<nav class="nav-bar">
+		    <ul>
+			    <li>
+				  <a href="https://gmaria260.github.io/J-P-Home">Home</a>
+				</li>
+				<li>
+				    <a href="https://gmaria260.github.io/J-P-About-Us">About Us</a>
+				</li>
+				<li>
+				    <a href=https://gmaria260.github.io/J-P-Menu class="active" >Menu</a>
+				</li>
+				<li>
+				    <a href="https://gmaria260.github.io/J-P-Location">Location</a>
+				</li>
+				<li>
+				    <a href="https://gmaria260.github.io/J-P-FAQ">FAQ</a>
+				</li>
+			</ul>
+	</header>
+	
+    <script>
+	    hamburger = document.querySelector(".hamburger");
+		hamburger.onclick = function() {
+		    navBar = document.querySelector(".nav-bar");
+			navBar.classList.toggle("active");
+		}
+	</script>	
+
+<break>
+<break>
+<break>
+<break>
+
+<br>
+<br>
+
+
+<center>
+<div class="text-container">
+ <h5 style="color:#FFE2C0;font-size:40px;"> OUR MENU </h5>
+ </div>
+ <div class="text-container">
+ <h5 style="color:#FFE2C0;font-size:25px;"> UNLI RICE </h5>
+ </div>
+ </center>
+ 
+<div class="row2">
+ <div class="card">
+  <div class="card-image-container">
+  <img src="lechonpares.jpg" style="width:255px"</a>
+  </div>
+  <center><p class="card-title">LECHON PARES</p>
+  <p class="card-title">70 PESOS</p></center>
+  </p>
+</div>
+<div class="card">
+  <div class="card-image-container">
+  <img src="beefpares.jpg" style="width:255px"</a>
+  </div>
+  <center><p class="card-title">BEEF PARES</p>
+  <p class="card-title">70 PESOS</p></center>
+  </p>
+</div>
+<div class="card">
+  <div class="card-image-container">
+  <img src="lechon&beef.jpg" style="width:255px"</a>
+  </div>
+  <center><p class="card-title">LECHON AND BEEF PARES</p>
+  <p class="card-title">70 PESOS</p></center>
+  </p>
+</div>
+<div class="card">
+  <div class="card-image-container">
+  <img src="Lechon.jpg" style="width:255px"</a>
+  </div>
+  <center><p class="card-title">LECHON ONLY</p>
+  <p class="card-title">70 PESOS</p></center>
+  </p>
+</div>
+</div>
+
+<br>
+<br>
+
+<center>
+<div class="text-container">
+ <h1 style="color:#FFE2C0;"> A LA CARTE </h1>
+ <p style="color:#FFE2C0;"> (2 cups of Rice Only) </p>
+ </div>
+ </center>
+ 
+ <div class="row2">
+
+<div class="card">
+  <div class="card-image-container">
+  <img src="beefmami.jpg" style="width:255px"</a>
+  </div>
+  <center><p class="card-title">BEEF MAMI</p>
+  <p class="card-title">70 PESOS</p></center>
+  </p>
+</div>
+<div class="card">
+  <div class="card-image-container">
+  <img src="lechonmami.jpg" style="width:255px"</a>
+  </div>
+  <center><p class="card-title">LECHON MAMI</p>
+  <p class="card-title">70 PESOS</p></center>
+  </p>
+</div>
+</div>
+
+ <break>
+ <break>
+ 
+<br>
+<br>
+
+<footer>
+	    <div class="container">
+		    <div class="sec aboutus">
+			    <h2>J&P Pares and Mami</h2>
+				<p>Good Day! We are delighted to have you as our guest and are committed
+				to providing you with a comfortable and memorable stay. As a first-time guest,
+				we want to ensure that you have a seamless and enjoyable experience with us..</p>
+				<ul class="sci">
+				    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				
+                    
+				    		
+			    </ul>
+		    </div>
+    		<div class="sec quickLinks">
+			    <h2>Helpful Links</h2>
+				<ul>
+				    <li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">FEATURES</a></li>
+					<li><a href="#">LOCATION</a></li
+				    <li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+    		<div class="sec contact">
+			    <h2>Company Description/Slogan</h2>
+				<ul class="info">
+				    <li>
+
+						<p>Contact Number: 0916521702</p> 
+						<br>
+						<p>Address: 2205 T. Earnshaw St. Gagalangin Tondo, Manila</p>
+					</li>
+					
+				</ul>	
+			</div>
+		</div>
+	</footer>
+	
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+     document.getElementById("navbar").style.backgroundColor = "#EBB992"; 
+	 document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+} else {
+      document.getElementById("navbar").style.backgroundColor = "#F38632";
+      document.getElementById("navbar").style.padding = "40px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+
+</script>
+  
+  
+
+</body>
+</html>
+
+
